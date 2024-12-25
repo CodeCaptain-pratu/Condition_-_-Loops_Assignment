@@ -1,0 +1,106 @@
+QUESTION:What are loops, and what do we need them? Explain different types of loops with their syntax and examples.
+Answer:
+Loops in JavaScript
+
+Loops are control structures that allow you to execute a block of code multiple times based on a condition. They are particularly useful for automating repetitive tasks, such as iterating over arrays or performing calculations.
+
+### Why Do We Need Loops?
+1. Efficiency: Reduce redundancy by executing the same code multiple times.
+2. Iteration: Access or manipulate items in data structures like arrays or objects.
+3. Automation: Perform repetitive tasks, such as printing a series of numbers or fetching data multiple times.
+
+
+### Types of Loops in JavaScript
+1. for Loop
+2. while Loop
+3. do...while Loop
+4. for...in Loop
+5. for...of Loop
+
+
+1) for Loop
+Used when the number of iterations is known.
+
+Syntax:
+for (initialization; condition; increment/decrement) {
+  // Code to execute
+}
+
+Example:
+
+for (let i = 0; i < 5; i++) {
+  console.log("Iteration number:", i);
+}
+
+
+2) while Loop
+Executes a block of code as long as the specified condition is `true`. Useful when the number of iterations is unknown.
+
+Syntax:
+while (condition) {
+  // Code to execute
+}
+
+
+Example:
+
+let i = 0;
+while (i < 5) {
+  console.log("Iteration number:", i);
+  i++;
+}
+
+
+3) do...while Loop
+Similar to the `while` loop, but it ensures that the code block is executed at least once, even if the condition is `false`.
+
+Syntax:
+
+do {
+  // Code to execute
+} while (condition);
+
+
+Example:
+
+let i = 0;
+do {
+  console.log("Iteration number:", i);
+  i++;
+} while (i < 5);
+
+
+4) for...in Loop
+Iterates over the properties of an object (or the indices of an array).
+
+Syntax:
+
+for (key in object) {
+  // Code to execute
+}
+
+
+Example:
+
+let person = { name: "Alice", age: 25, city: "Mumbai" };
+for (let key in person) {
+  console.log(key + ":", person[key]);
+}
+
+
+5) for...of Loop
+Iterates over the values of iterable objects like arrays, strings, maps, etc.
+
+Syntax:
+for (value of iterable) {
+  // Code to execute
+}
+
+
+Example:
+
+let numbers = [10, 20, 30];
+for (let num of numbers) {
+  console.log("Number:", num);
+}
+
