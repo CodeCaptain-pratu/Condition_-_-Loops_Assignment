@@ -1,0 +1,9 @@
+QUESTION:Use the while loop to print numbers from 1 to 25 in ascending and descending order.
+Answer:
+
+let i=1,j=25;
+while(i<=25 && j>=0){
+    console.log(i+" "+j);
+    i++;
+    j--;
+}
